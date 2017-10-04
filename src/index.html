@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Pokemon App</title>
+    <script src="js/index.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="pokemon">
+        <h1>Pokedex</h1>
+        <input id="pokeIDInput" type="number" placeholder="Enter a Pokemon id" onkeypress="loadPoke(event)">
+        <div id="loader"></div>
+        <div class="animate-bottom">
+            <table id="pokeTable">
+                <h2>Pokemon Details</h2>
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Weight</th>
+                    </thead>
+                    <tbody id="pokemonDetails">
+                    </tbody>
+                </table>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
